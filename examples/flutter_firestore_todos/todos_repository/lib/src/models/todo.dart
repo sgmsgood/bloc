@@ -1,7 +1,5 @@
-import 'package:meta/meta.dart';
 import '../entities/entities.dart';
 
-@immutable
 class Todo {
   final bool complete;
   final String id;

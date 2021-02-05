@@ -1,5 +1,6 @@
+import '../user_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:user_repository/user_repository.dart';
+
 
 class FirebaseUserRepository implements UserRepository {
   final FirebaseAuth _firebaseAuth;
@@ -9,6 +10,7 @@ class FirebaseUserRepository implements UserRepository {
 
   Future<bool> isAuthenticated() async {
     final currentUser = _firebaseAuth.currentUser;
+    print("@!!currentUser: $currentUser");
     return currentUser != null;
   }
 

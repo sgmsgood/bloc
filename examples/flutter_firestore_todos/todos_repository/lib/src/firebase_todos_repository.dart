@@ -1,11 +1,8 @@
-// Copyright 2018 The Flutter Architecture Sample Authors. All rights reserved.
-// Use of this source code is governed by the MIT license that can be found
-// in the LICENSE file.
-
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:todos_repository/todos_repository.dart';
+
+import '../todos_repository.dart';
 import 'entities/entities.dart';
 
 class FirebaseTodosRepository implements TodosRepository {
